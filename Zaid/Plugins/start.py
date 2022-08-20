@@ -26,7 +26,7 @@ async def play(_, message: Message):
         user_name = message.from_user.first_name
         rpk = "["+user_name+"](tg://user?id="+str(user_id)+")" 
         await app.send_message(message.chat.id,
-            text=f"Hello {rpk}!\n\nThis is Zaid Vc Player.\nI play music on Telegram's Voice Chats.\n\nRead commands List or Start using me.",
+            text=f"Hello {rpk}!\n\nThis is an Music Bot.\nI play music on Telegram's Voice Chats and also can download video from YouTube in audio or in video format.\n\nRead commands List or Start using me.",
             parse_mode="markdown",
             reply_markup=start_keyboard,
             reply_to_message_id=message.message_id
@@ -57,7 +57,7 @@ async def play(_, message: Message):
 📎 **Channel Link:** [Visit From Here]({x["channel_url"]})
 🔗 **Link:** [Link]({x["webpage_url"]})
 
-⚡️ __Searched Powered By Zaid Vc Player__"""
+⚡️ __Searched Powered by Bot__"""
             link = (x["webpage_url"])
             buttons = personal_markup(link)
             userid = message.from_user.id
